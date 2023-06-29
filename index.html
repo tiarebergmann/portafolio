@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/d4513aa335.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo_transparent.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#works">Mis trabajos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+      <div class="container">
+        <h1>Bienvenido a mi portafolio digital</h1>
+        <p>Tiare Bergmann / Desarrolladora Web</p>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 foto d-flex justify-content-center">
+            <img
+              src="./img/foto_about.jpeg"
+              alt="Perfil"
+              class="rounded-circle profile-image"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>Sobre mí</h2>
+            <p>
+              Soy diseñadora y desarrolladora web con experiencia en HTML, CSS,
+              JavaScript, PHP y MySQL. Me encanta crear sitios web que sean
+              accesibles para todos los usuarios y que se adapten a todos los
+              dispositivos. Me apasiona aprender nuevas tecnologías y estar al
+              día con las últimas tendencias en diseño web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Services Section-->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card-services">
+              <div class="card-body">
+                <div class="icon-item"><i class="fa-solid fa-code fa-2xl"></i></div>
+                <h3>Diseño web</h3>
+                <p>Creación de sitios web con HTML, CSS y JavaScript.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-services">
+              <div class="card-body">
+                <div class="icon-item"><i class="fa-brands fa-wordpress fa-2xl"></i></div>
+                <h3>Tu sitio en Wordpress</h3>
+                <p>Autoadministrable y con temas 100% personalizados.</p>
+              </div>
+            </div>
+          </div>
+         
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works">
+      <div class="container">
+        <h2>Mis trabajos</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-works">
+              <img
+                src="./img/tiatomate.png"
+                class="card-img-top"
+                alt="Trabajo 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Tía Tomate</h5>
+                <div class="card-button">
+                <a
+                  href="https://tiarebergmann.github.io/tia_tomate/"
+                  class="btn btn-primary"
+                  >Ver más</a
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-works">
+              <img
+                src="./img/trekin.png"
+                class="card-img-top"
+                alt="Trabajo 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Trek In</h5>
+                <div class="card-button">
+                <a
+                  href="https://tiarebergmann.github.io/pruebacss/"
+                  class="btn btn-primary"
+                  >Ver más</a
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-works">
+              <img
+                src="./img/safari.png"
+                class="card-img-top"
+                alt="Trabajo 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Safari colectivo</h5>
+                <div class="card-button">
+                <a href="url-externa-3" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-form">
+          <h2>Contáctame</h2>
+          <form action="contact.php" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="btn-container">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <ul class="social-icons">
+          <li>
+            <a href="https://github.com/tiarebergmann"
+              ><i class="fa-brands fa-github" style="color: #ff66c2"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/tiarebergmann/"
+              ><i class="fa-brands fa-linkedin" style="color: #ff66c2"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com"
+              ><i class="fa-brands fa-instagram" style="color: #ff66c2"></i
+            ></a>
+          </li>
+        </ul>
+        <p>&copy; 2023 Tiare Bergmann</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
